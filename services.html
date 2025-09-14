@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Logo (Left Side) -->
+        <div class="flex-shrink-0">
+          <img src="./assets/logo.png" alt="Logo" class="w-[127px] h-[127px]">
+        </div>
+
+        <!-- Nav Items (Right Side) -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+          <a href="#" class="text-gray-600 hover:text-blue-600 transition">About</a>
+          <a href="#" class="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Services</a>
+          <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section -->
+<section class="bg-white pt-2 pb-16">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- Left Text -->
+    <div>
+      <h2 class="text-3xl font-bold">
+        Our <span class="text-blue-600">Services</span>
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Let's Get in Touch  
+        <br>
+        We offer a complete range of property documentation and consultancy 
+        services across Delhi-NCR, ensuring legal compliance and smooth 
+        property transactions.
+      </p>
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex justify-center">
+      <img src="./assets/serviceshero.jpg" alt="Service Image" class="rounded-lg shadow-lg">
+    </div>
+
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="bg-white py-16">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-semibold text-gray-900">
+        Comprehensive Documentation Services
+      </h2>
+    </div>
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<!-- Services Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+
+      <!-- Card 1 -->
+<div class="bg-white shadow-md overflow-hidden hover:shadow-xl transition w-[553px] rounded-[4px]">
+
+  <img src="./assets/service1.png" alt="Service"
+       class="w-full h-48 object-cover rounded-t-[4px]">
+
+  <!-- yaha h-[calc...] hata kar h-full use kiya -->
+  <div class="p-6 flex flex-col h-full">
+    <h3 class="text-lg font-semibold text-black">Property Registration & Transfer</h3>
+    <p class="mt-2 text-gray-600">
+      Complete property registration services including sale deed, gift deed, and property transfer documentation.
+    </p>
+
+    <ul class="mt-3 space-y-2 flex-1">
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Sale Deed Registration</span>
+      </li>
+
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Property Transfer</span>
+      </li>
+
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Gift Deed Documentation</span>
+      </li>
+
+      <li class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+            <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span class="text-black">Joint Property Registration</span>
+        </div>
+
+        <!-- mt-auto lagaya taaki bottom pe chipak jaye -->
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+     <!-- Card 2 -->
+<div class="bg-white shadow-md overflow-hidden hover:shadow-xl transition w-[553px] rounded-[4px]">
+  <img src="./assets/service1.png" alt="Service" class="w-full h-48 object-cover rounded-t-[4px]">
+  <div class="p-6 flex flex-col h-full">
+    <h3 class="text-lg font-semibold text-black">Title Verification & Due Diligence</h3>
+    <p class="mt-2 text-gray-600">Comprehensive property title verification and due diligence services to ensure clear ownership.</p>
+    <ul class="mt-3 space-y-2 flex-1">
+      <li class="flex items-center gap-2">
+        <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25" stroke-width="1.6"/><path d="M7.5 12.5l2.5 2.5L16.5 9" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="text-black">Title Search</span>
+      </li>
+      <li class="flex items-center gap-2">
+        <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25" stroke-width="1.6"/><path d="M7.5 12.5l2.5 2.5L16.5 9" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="text-black">Chain of Title Verification</span>
+      </li>
+      <li class="flex items-center gap-2">
+        <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25" stroke-width="1.6"/><path d="M7.5 12.5l2.5 2.5L16.5 9" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="text-black">Encumbrance Certificate</span>
+      </li>
+      <li class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25" stroke-width="1.6"/><path d="M7.5 12.5l2.5 2.5L16.5 9" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-black">Legal Due Diligence</span>
+        </div>
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Card 3 -->
+<div class="bg-white shadow-md overflow-hidden hover:shadow-xl transition w-[553px] rounded-[4px]">
+  <img src="./assets/service1.png" alt="Service" class="w-full h-48 object-cover rounded-t-[4px]">
+  <div class="p-6 flex flex-col h-full">
+    <h3 class="text-lg font-semibold text-black">Legal Documentation Services</h3>
+    <p class="mt-2 text-gray-600">Expert preparation and review of all property-related legal documents including agreements, contracts.</p>
+    <ul class="mt-3 space-y-2 flex-1">
+      <li class="flex items-center gap-2"><svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25" stroke-width="1.6"/><path d="M7.5 12.5l2.5 2.5L16.5 9" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="text-black">Sale Agreement Drafting</span></li>
+      <li class="flex items-center gap-2"><svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25" stroke-width="1.6"/><path d="M7.5 12.5l2.5 2.5L16.5 9" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="text-black">Lease Deed Preparation</span></li>
+      <li class="flex items-center gap-2"><svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25" stroke-width="1.6"/><path d="M7.5 12.5l2.5 2.5L16.5 9" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="text-black">Partnership Deeds</span></li>
+      <li class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25" stroke-width="1.6"/><path d="M7.5 12.5l2.5 2.5L16.5 9" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-black">Legal Notice Services</span>
+        </div>
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Card 4 -->
+<div class="bg-white shadow-md overflow-hidden hover:shadow-xl transition w-[553px] rounded-[4px]">
+  <img src="./assets/service1.png" alt="Service" class="w-full h-48 object-cover rounded-t-[4px]">
+  <div class="p-6 flex flex-col h-full">
+    <h3 class="text-lg font-semibold text-black">NOC & Clearance Services</h3>
+    <p class="mt-2 text-gray-600">Obtain necessary NOCs and clearances from various authorities including society NOC, bank NOC.</p>
+    <ul class="mt-3 space-y-2 flex-1">
+      <li class="flex items-center gap-2"><svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25" stroke-width="1.6"/><path d="M7.5 12.5l2.5 2.5L16.5 9" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="text-black">Society NOC</span></li>
+      <li class="flex items-center gap-2"><svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25" stroke-width="1.6"/><path d="M7.5 12.5l2.5 2.5L16.5 9" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="text-black">Bank NOC</span></li>
+      <li class="flex items-center gap-2"><svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25" stroke-width="1.6"/><path d="M7.5 12.5l2.5 2.5L16.5 9" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="text-black">Municipal Clearances</span></li>
+      <li class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25" stroke-width="1.6"/><path d="M7.5 12.5l2.5 2.5L16.5 9" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-black">Environmental Clearances</span>
+        </div>
+        <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <!-- Card 5 -->
+<div class="bg-white shadow-md overflow-hidden hover:shadow-xl transition w-[553px] rounded-[4px]">
+  <img src="./assets/service1.png" alt="Service"
+       class="w-full h-48 object-cover rounded-t-[4px]">
+
+  <div class="p-6 flex flex-col h-full">
+    <h3 class="text-lg font-semibold text-black">Property Valuation & Assessment</h3>
+    <p class="mt-2 text-gray-600">
+      Professional property valuation services for sale, purchase, loan, insurance, and legal purposes.
+    </p>
+    <ul class="mt-3 space-y-2 flex-1">
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M7.5 12.5l2.5 2.5L16.5 9"
+            stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="text-black">Market Valuation</span>
+      </li>
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M7.5 12.5l2.5 2.5L16.5 9"
+            stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="text-black">Insurance Valuation</span>
+      </li>
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M7.5 12.5l2.5 2.5L16.5 9"
+            stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="text-black">Loan Valuation</span>
+      </li>
+      <li class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M7.5 12.5l2.5 2.5L16.5 9"
+              stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="text-black">Legal Valuation</span>
+        </div>
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Card 6 -->
+<div class="bg-white shadow-md overflow-hidden hover:shadow-xl transition w-[553px] rounded-[4px]">
+  <img src="./assets/service1.png" alt="Service"
+       class="w-full h-48 object-cover rounded-t-[4px]">
+  
+  <div class="p-6 flex flex-col h-full">
+    <h3 class="text-lg font-semibold text-black">Mutation & Name Transfer</h3>
+    <p class="mt-2 text-gray-600">
+      Complete mutation services for property name transfer in revenue records and society documents.
+    </p>
+
+    <ul class="mt-3 space-y-2 flex-1">
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Revenue Record Mutation</span>
+      </li>
+
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Municipal Name Transfer</span>
+      </li>
+
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Society Transfer</span>
+      </li>
+
+      <li class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+            <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span class="text-black">Khata Transfer</span>
+        </div>
+<a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Card 7 -->
+<div class="bg-white shadow-md overflow-hidden hover:shadow-xl transition w-[553px] rounded-[4px]">
+  <img src="./assets/service1.png" alt="Service"
+       class="w-full h-48 object-cover rounded-t-[4px]">
+  
+  <div class="p-6 flex flex-col h-full">
+    <h3 class="text-lg font-semibold text-black">Property Search & Verification</h3>
+    <p class="mt-2 text-gray-600">
+      Detailed property search and verification services to check legal status and ownership.
+    </p>
+
+    <ul class="mt-3 space-y-2 flex-1">
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Property Search</span>
+      </li>
+
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Litigation Check</span>
+      </li>
+
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Ownership Verification</span>
+      </li>
+
+      <li class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+            <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span class="text-black">Document Authentication</span>
+        </div>
+
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Card 8 -->
+<div class="bg-white shadow-md overflow-hidden hover:shadow-xl transition w-[553px] rounded-[4px]">
+  <img src="./assets/service1.png" alt="Service"
+       class="w-full h-48 object-cover rounded-t-[4px]">
+  
+  <div class="p-6 flex flex-col h-full">
+    <h3 class="text-lg font-semibold text-black">Stamp Duty & Registration Fee Calculation</h3>
+    <p class="mt-2 text-gray-600">
+      Accurate calculation of stamp duty, registration fees, and other charges as per government rates.
+    </p>
+
+    <ul class="mt-3 space-y-2 flex-1">
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Stamp Duty Calculation</span>
+      </li>
+
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Registration Fee Estimate</span>
+      </li>
+
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Tax Planning</span>
+      </li>
+
+      <li class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+            <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span class="text-black">Fee Structure Guidance</span>
+        </div>
+
+      <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Card 9 -->
+<div class="bg-white shadow-md overflow-hidden hover:shadow-xl transition w-[553px] rounded-[4px]">
+  <img src="./assets/service1.png" alt="Service"
+       class="w-full h-48 object-cover rounded-t-[4px]">
+  
+  <div class="p-6 flex flex-col h-full">
+    <h3 class="text-lg font-semibold text-black">Power of Attorney Services</h3>
+    <p class="mt-2 text-gray-600">
+      Preparation and registration of Power of Attorney documents for property transactions.
+    </p>
+
+    <ul class="mt-3 space-y-2 flex-1">
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">General Power of Attorney</span>
+      </li>
+
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Special Power of Attorney</span>
+      </li>
+
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">POA Registration</span>
+      </li>
+
+      <li class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+            <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span class="text-black">POA Cancellation</span>
+        </div>
+
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Card 10 -->
+<div class="bg-white shadow-md overflow-hidden hover:shadow-xl transition w-[553px] rounded-[4px]">
+  <img src="./assets/service1.png" alt="Service"
+       class="w-full h-48 object-cover rounded-t-[4px]">
+  
+  <div class="p-6 flex flex-col h-full">
+    <h3 class="text-lg font-semibold text-black">Property Legal Consultation</h3>
+    <p class="mt-2 text-gray-600">
+      Expert legal consultation on all property matters including disputes, compliance, and transaction guidance.
+    </p>
+
+    <ul class="mt-3 space-y-2 flex-1">
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Legal Advisory</span>
+      </li>
+
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Dispute Resolution</span>
+      </li>
+
+      <li class="flex items-center gap-2">
+        <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+          <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="text-black">Compliance Guidance</span>
+      </li>
+
+      <li class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <svg aria-hidden="true" class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.6" />
+            <path d="M7.5 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round" />
+          </svg>
+          <span class="text-black">Transaction Support</span>
+        </div>
+
+      <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</section>
+<section class="py-12 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <!-- Heading -->
+    <h2 class="text-2xl font-semibold text-black">Simple 4-Step Process</h2>
+    <p class="mt-2 text-gray-600">
+      We follow a systematic approach to ensure smooth and hassle-free property documentation services.
+    </p>
+
+    <!-- Steps -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-12">
+      
+      <!-- Step 1 -->
+      <div class="flex flex-col items-center text-center">
+        <img src="./images/Group 1.png" alt="Step 1" class="w-40 h-40 mx-auto">
+        <h3 class="mt-4 text-lg font-semibold text-[#f59e0b]">Initial Consultation</h3>
+        <p class="mt-2 text-gray-600 text-sm">
+          Free consultation to understand your requirements and property documentation needs.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="flex flex-col items-center text-center">
+        <img src="./images/Group2.png" alt="Step 2" class="w-40 h-40 mx-auto">
+        <h3 class="mt-4 text-lg font-semibold text-[#f97316]">Document Analysis</h3>
+        <p class="mt-2 text-gray-600 text-sm">
+          Thorough analysis of existing documents and identification of required services.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flex flex-col items-center text-center">
+        <img src="./images/group3.png" alt="Step 3" class="w-40 h-40 mx-auto">
+        <h3 class="mt-4 text-lg font-semibold text-[#0ea5e9]">Service Execution</h3>
+        <p class="mt-2 text-gray-600 text-sm">
+          Professional execution of documentation and legal processes with regular updates.
+        </p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="flex flex-col items-center text-center">
+        <img src="./images/Group4.png" alt="Step 4" class="w-40 h-40 mx-auto">
+        <h3 class="mt-4 text-lg font-semibold text-[#ef4444]">Final Delivery</h3>
+        <p class="mt-2 text-gray-600 text-sm">
+          Complete delivery of all documents with compliance certificates and future guidance.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0a1a3f] text-white py-10">
+  <div class="max-w-6xl mx-auto px-8 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-4 gap-8">
+    
+    <!-- Logo + Name -->
+    <div>
+      <img src="./assets/logo.png" alt="NCRDOCS Logo" class="w-20 mb-4">
+    </div>
+
+    <!-- Helpful Links -->
+    <div>
+      <h3 class="font-semibold text-lg mb-3 border-b-2 border-blue-500 inline-block pb-1">
+        Helpful Links
+      </h3>
+      <ul class="space-y-2 text-gray-300 mt-3">
+        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white">Support</a></li>
+        <li><a href="#" class="hover:text-white">FAQ</a></li>
+        <li><a href="#" class="hover:text-white">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div>
+      <h3 class="font-semibold text-lg mb-3 border-b-2 border-blue-500 inline-block pb-1">
+        Support
+      </h3>
+      <ul class="space-y-2 text-gray-300 mt-3">
+        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white">Support</a></li>
+        <li><a href="#" class="hover:text-white">FAQ</a></li>
+        <li><a href="#" class="hover:text-white">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h3 class="font-semibold text-lg mb-3 border-b-2 border-blue-500 inline-block pb-1">
+        Contact Us
+      </h3>
+
+      <!-- Signup -->
+      <div class="flex items-center bg-white rounded-md overflow-hidden mb-4 max-w-sm">
+        <input type="email" placeholder="Your Email Address..." class="px-3 py-2.5 w-full text-gray-700 outline-none text-sm">
+        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2.5 text-white whitespace-nowrap text-sm font-medium">
+          Sign Up
+        </button>
+      </div>
+
+      <!-- Contact Info -->
+      <p class="text-gray-300 flex items-center gap-2 mb-2 text-sm">
+        <img src="./images/Frame.png" alt="Location Icon" class="w-4 h-4 object-contain" />
+        C-116 C BLOCK NOIDA
+      </p>
+      <p class="text-gray-300 flex items-center gap-2 text-sm">
+        <img src="./images/Vector.png" alt="Phone Icon" class="w-4 h-4 object-contain" />
+        +91 1234 567 890
+      </p>
+    </div>
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="max-w-6xl mx-auto px-8 md:px-12 lg:px-16">
+    <div class="mt-8 border-t border-gray-700"></div>
+    <div class="pt-4 flex justify-between items-start text-gray-400 text-sm">
+      <div class="flex flex-col">
+        <div class="h-4"></div>
+        <span class="font-medium">NCRDOCS.COM</span>
+      </div>
+      <div class="flex flex-col items-end">
+        <div class="h-4"></div>
+        <span>Copyright © 2025. All rights reserved</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
