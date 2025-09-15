@@ -14,16 +14,17 @@
       <div class="flex justify-between items-center h-20">
         
         <!-- Logo (Left Side) -->
-        <div class="flex-shrink-0">
-          <img src="./assets/logo.png" alt="Logo" class="w-[127px] h-[127px]">
-        </div>
+       <div class="flex-shrink-0">
+                <img src="./assets/logo.png" alt="Logo" class="w-16 h-16">
+            </div>
 
         <!-- Nav Items (Right Side) -->
         <div class="hidden md:flex space-x-8">
-          <a href="#" class="text-gray-600 hover:text-blue-600 transition">Home</a>
-          <a href="#" class="text-gray-600 hover:text-blue-600 transition">About</a>
-          <a href="#" class="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Services</a>
-          <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+            <a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors py-2">Home</a></li>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition-colors py-2">About</a></li>
+                    <a href="#" class="text-blue-600 font-semibold border-b-2 border-blue-600 py-2 px-1">Services</a></li>
+                    <a href="faq.html" class="text-gray-600 hover:text-blue-600 transition-colors py-2">FAQ</a></li>
+                   <a href="contactus.html"  class="text-gray-600 hover:text-blue-600 transition-colors py-2">Contact</a></li>
         </div>
       </div>
     </div>
@@ -31,29 +32,28 @@
 
 <!-- Hero Section -->
 <section class="bg-white pt-2 pb-16">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-
-    <!-- Left Text -->
-    <div>
-      <h2 class="text-3xl font-bold">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-start">
+    <!-- Left Text with Smaller Width -->
+    <div class="text-left max-w-md">
+      <h2 class="text-3xl font-bold mb-2">
         Our <span class="text-blue-600">Services</span>
       </h2>
-      <p class="mt-4 text-gray-600">
-        Let's Get in Touch  
-        <br>
-        We offer a complete range of property documentation and consultancy 
-        services across Delhi-NCR, ensuring legal compliance and smooth 
-        property transactions.
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">
+        Let's Get in Touch
+      </h3>
+      <p class="text-gray-600 leading-snug">
+        We offer property documentation & consultancy services across Delhi-NCR,  
+        ensuring legal compliance and smooth transactions.
       </p>
     </div>
-
+    
     <!-- Right Image -->
     <div class="flex justify-center">
       <img src="./assets/serviceshero.jpg" alt="Service Image" class="rounded-lg shadow-lg">
     </div>
-
   </div>
 </section>
+
 
 <!-- Services Section -->
 <section class="bg-white py-16">
@@ -636,77 +636,91 @@
   </div>
 </section>
 <!-- Footer -->
-<footer class="bg-[#0a1a3f] text-white py-10">
-  <div class="max-w-6xl mx-auto px-8 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-4 gap-8">
+<footer class="bg-[#0B1B3D] text-white py-12 px-6 md:px-16 lg:px-24">
+  <div class="max-w-7xl mx-auto">
     
-    <!-- Logo + Name -->
-    <div>
-      <img src="./assets/logo.png" alt="NCRDOCS Logo" class="w-20 mb-4">
-    </div>
-
-    <!-- Helpful Links -->
-    <div>
-      <h3 class="font-semibold text-lg mb-3 border-b-2 border-blue-500 inline-block pb-1">
-        Helpful Links
-      </h3>
-      <ul class="space-y-2 text-gray-300 mt-3">
-        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-        <li><a href="#" class="hover:text-white">Support</a></li>
-        <li><a href="#" class="hover:text-white">FAQ</a></li>
-        <li><a href="#" class="hover:text-white">Terms & Conditions</a></li>
-      </ul>
-    </div>
-
-    <!-- Support -->
-    <div>
-      <h3 class="font-semibold text-lg mb-3 border-b-2 border-blue-500 inline-block pb-1">
-        Support
-      </h3>
-      <ul class="space-y-2 text-gray-300 mt-3">
-        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-        <li><a href="#" class="hover:text-white">Support</a></li>
-        <li><a href="#" class="hover:text-white">FAQ</a></li>
-        <li><a href="#" class="hover:text-white">Terms & Conditions</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact -->
-    <div>
-      <h3 class="font-semibold text-lg mb-3 border-b-2 border-blue-500 inline-block pb-1">
-        Contact Us
-      </h3>
-
-      <!-- Signup -->
-      <div class="flex items-center bg-white rounded-md overflow-hidden mb-4 max-w-sm">
-        <input type="email" placeholder="Your Email Address..." class="px-3 py-2.5 w-full text-gray-700 outline-none text-sm">
-        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2.5 text-white whitespace-nowrap text-sm font-medium">
-          Sign Up
-        </button>
+    <!-- Main Footer Content -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <!-- Logo Section with Navbar Logo -->
+      <div class="footer-logo">
+        <img src="./assets/logo.png" alt="Logo" class="h-12 w-auto mb-3">
+        <p class="text-sm text-gray-400">NCRDOCS.COM</p>
       </div>
-
-      <!-- Contact Info -->
-      <p class="text-gray-300 flex items-center gap-2 mb-2 text-sm">
-        <img src="./images/Frame.png" alt="Location Icon" class="w-4 h-4 object-contain" />
-        C-116 C BLOCK NOIDA
-      </p>
-      <p class="text-gray-300 flex items-center gap-2 text-sm">
-        <img src="./images/Vector.png" alt="Phone Icon" class="w-4 h-4 object-contain" />
-        +91 1234 567 890
-      </p>
-    </div>
-  </div>
-
-  <!-- Bottom Section -->
-  <div class="max-w-6xl mx-auto px-8 md:px-12 lg:px-16">
-    <div class="mt-8 border-t border-gray-700"></div>
-    <div class="pt-4 flex justify-between items-start text-gray-400 text-sm">
-      <div class="flex flex-col">
-        <div class="h-4"></div>
-        <span class="font-medium">NCRDOCS.COM</span>
+      
+      <!-- Helpful Links -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4 text-white">
+          Helpful Link
+          <div class="w-12 h-1 bg-blue-500 mt-1"></div>
+        </h4>
+        <ul class="space-y-3 text-sm text-gray-300">
+          <li><a href="privacypolicy.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
+          <li><a href="support.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">Support</a></li>
+          <li><a href="faq.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">FAQ</a></li>
+          <li><a href="terms&condtion.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">Terms & Conditions</a></li>
+        </ul>
       </div>
-      <div class="flex flex-col items-end">
-        <div class="h-4"></div>
-        <span>Copyright © 2025. All rights reserved</span>
+      
+      <!-- Support -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4 text-white">
+          Support
+          <div class="w-12 h-1 bg-blue-500 mt-1"></div>
+        </h4>
+        <ul class="space-y-3 text-sm text-gray-300">
+          <li><a href="privacypolicy.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
+          <li><a href="support.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">Support</a></li>
+          <li><a href="faq.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">FAQ</a></li>
+          <li><a href="terms&condtion.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Us -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4 text-white">
+          Contact Us
+          <div class="w-12 h-1 bg-blue-500 mt-1"></div>
+        </h4>
+        
+        <!-- Email Signup Form -->
+        <div class="flex mb-6">
+          <input 
+            type="email" 
+            placeholder="Your Email Address..." 
+            class="flex-1 px-3 py-2 rounded-l-md text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+          <button 
+            type="submit" 
+            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r-md font-semibold text-sm transition duration-300"
+          >
+            Sign Up
+          </button>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="space-y-2 text-sm text-gray-300">
+          <p class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            C-116 G BLOCK NOIDA
+          </p>
+          <p class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9 21 3 14 3 5V5z" />
+            </svg>
+            +91 1234 567 890
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="border-t border-gray-700 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-sm text-gray-400">NCRDOCS.COM</p>
+        <p class="text-sm text-gray-400 mt-2 md:mt-0">Copyright © 2025. All rights reserved</p>
       </div>
     </div>
   </div>

@@ -6,25 +6,26 @@
   <title>NCR Docs</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body class="bg-gray-100 font-manrope"> 
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-md">
+  <nav class="bg-white shadow-md pb-2">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
-        <div class="flex-shrink-0">
-          <img src="./assets/logo.png" alt="Logo" class="h-10 w-auto">
-        </div>
+         <div class="flex-shrink-0">
+                <img src="./assets/logo.png" alt="Logo" class="w-16 h-16">
+            </div>
 
         <!-- Navigation Items -->
         <div class="hidden md:flex space-x-8 text-gray-700 font-medium">
           <a href="#" class="text-blue-600 border-b-2 border-blue-600 pb-1">Home</a>
-          <a href="#" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">About</a>
-          <a href="#" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">Services</a>
-          <a href="#" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">FAQ</a>
-          <a href="#" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">Contact</a>
+          <a href="about.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">About</a>
+          <a href="services.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">Services</a>
+          <a href="faq.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">FAQ</a>
+          <a href="contactus.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">Contact</a>
         </div>
       </div>
     </div>
@@ -56,20 +57,16 @@
     </div>
   </div>
 </section>
-
 <!-- Services -->
 <section id="services" class="relative py-16 px-4 md:px-8 lg:px-16 bg-gray-50 overflow-hidden">
   <!-- Section Header - Centered -->
   <div class="text-center mb-12 relative z-10">
-    <!-- Big Title -->
     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">OUR SERVICES</h2>
-    
-    <!-- Small Subtitle -->
     <p class="text-base md:text-lg text-gray-600 font-medium">Fast, Reliable & Secure Document Solutions</p>
   </div>
   
- <!-- Watermark Big Background Text -->
-<div class="absolute bottom-8 left-0 w-full pointer-events-none select-none z-0 flex justify-center">
+<!-- Watermark Big Background Text - MOVED FURTHER DOWN -->
+<div class="absolute bottom-0 left-0 w-full pointer-events-none select-none z-0 flex justify-center transform translate-x-8 translate-y-16">
     <h1 class="text-[8rem] md:text-[10rem] lg:text-[12rem] font-semibold text-white opacity-80"
         style="text-shadow: 
                2px 2px 0px #ccc,
@@ -82,12 +79,11 @@
 </div>
 
 
-
-  <!-- Services Layout -->
+  <!-- Services Layout: LEFT-RIGHT SPLIT -->
   <div class="relative z-10 max-w-7xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       
-      <!-- Left Side - Main Service -->
+      <!-- LEFT SIDE - Main Service Text -->
       <div class="p-8 flex flex-col justify-start">
         <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
           Your One-Stop Document Partner
@@ -100,42 +96,169 @@
         </button>
       </div>
       
-      <!-- Right Side - Two Service Items Stacked -->
-      <div class="space-y-6">
+      <!-- RIGHT SIDE - All 10 Service Cards with TRANSPARENT BACKGROUNDS -->
+      <div class="space-y-4 max-h-96 overflow-y-auto pr-2 ml-8 pl-6 flex flex-col items-end">
         
-        <!-- Service Item 1 -->
-        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center space-x-6">
+        <!-- Service Card 1: Property Registration & Transfer -->
+        <div class="bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-20 transition-all duration-300 flex items-center space-x-4 max-w-sm w-full hover:bg-opacity-40">
           <div class="flex-1">
-            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">Property Registration & Transfer</h3>
-            <p class="text-gray-600 mb-4 leading-relaxed">Get Your Food Business Licensed Quickly & Hassle-Free</p>
-            <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold hover:underline transition duration-300">
-              Learn More 
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </a>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Property Registration & Transfer</h3>
+            <p class="text-gray-700 mb-3 text-sm leading-relaxed">Complete property registration services including sale deed, gift deed, and property transfer documentation with government authorities in Delhi-NCR.</p>
+           <!-- mt-auto lagaya taaki bottom pe chipak jaye -->
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
           </div>
           <div class="flex-shrink-0">
-            <img src="./assets/property-registration.png" alt="Property Registration" class="w-24 h-24 md:w-32 md:h-32 object-cover rounded-lg">
+            <img src="./assets/property-registration.png" alt="Property Registration" class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-lg">
+          </div>
+        </div>
+
+        <!-- Service Card 2: Title Verification & Due Diligence -->
+        <div class="bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-20 transition-all duration-300 flex items-center space-x-4 max-w-sm w-full hover:bg-opacity-40">
+          <div class="flex-1">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Title Verification & Due Diligence</h3>
+            <p class="text-gray-700 mb-3 text-sm leading-relaxed">Comprehensive property title verification and due diligence services to ensure clear ownership and legal compliance for your property investment.</p>
+          <!-- mt-auto lagaya taaki bottom pe chipak jaye -->
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+          </div>
+          <div class="flex-shrink-0">
+            <img src="./assets/service2.png" alt="Title Verification" class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-lg">
+          </div>
+        </div>
+
+        <!-- Service Card 3: Legal Documentation Services -->
+        <div class="bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-20 transition-all duration-300 flex items-center space-x-4 max-w-sm w-full hover:bg-opacity-40">
+          <div class="flex-1">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Legal Documentation Services</h3>
+            <p class="text-gray-700 mb-3 text-sm leading-relaxed">Expert preparation and review of all property-related legal documents including agreements, contracts, and statutory compliance documents.</p>
+          <!-- mt-auto lagaya taaki bottom pe chipak jaye -->
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+          </div>
+           <div class="flex-shrink-0">
+            <img src="./assets/service3.png" alt="Title Verification" class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-lg">
+          </div>
+          </div>
+        
+
+        <!-- Service Card 4: NOC & Clearance Services -->
+        <div class="bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-20 transition-all duration-300 flex items-center space-x-4 max-w-sm w-full hover:bg-opacity-40">
+          <div class="flex-1">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">NOC & Clearance Services</h3>
+            <p class="text-gray-700 mb-3 text-sm leading-relaxed">Obtain necessary NOCs and clearances from various authorities including society NOC, bank NOC, and government clearances.</p>
+          <!-- mt-auto lagaya taaki bottom pe chipak jaye -->
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+          </div>
+             <div class="flex-shrink-0">
+            <img src="./assets/service4.png" alt="Title Verification" class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-lg">
+          </div>
+          </div>
+     
+
+        <!-- Service Card 5: Property Valuation & Assessment -->
+        <div class="bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-20 transition-all duration-300 flex items-center space-x-4 max-w-sm w-full hover:bg-opacity-40">
+          <div class="flex-1">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Property Valuation & Assessment</h3>
+            <p class="text-gray-700 mb-3 text-sm leading-relaxed">Professional property valuation services for sale, purchase, loan, insurance, and legal purposes by certified valuers.</p>
+          <!-- mt-auto lagaya taaki bottom pe chipak jaye -->
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+          </div>
+             <div class="flex-shrink-0">
+            <img src="./assets/service5.png" alt="Title Verification" class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-lg">
+          </div>
+          </div>
+     
+
+        <!-- Service Card 6: Mutation & Name Transfer -->
+        <div class="bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-20 transition-all duration-300 flex items-center space-x-4 max-w-sm w-full hover:bg-opacity-40">
+          <div class="flex-1">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Mutation & Name Transfer</h3>
+            <p class="text-gray-700 mb-3 text-sm leading-relaxed">Complete mutation services for property name transfer in revenue records, municipal records, and society documents.</p>
+         <!-- mt-auto lagaya taaki bottom pe chipak jaye -->
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+          </div>
+            <div class="flex-shrink-0">
+            <img src="./assets/service6.png" alt="Title Verification" class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-lg">
+          </div>
+          </div>
+      
+
+        <!-- Service Card 7: Property Search & Verification -->
+        <div class="bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-20 transition-all duration-300 flex items-center space-x-4 max-w-sm w-full hover:bg-opacity-40">
+          <div class="flex-1">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Property Search & Verification</h3>
+            <p class="text-gray-700 mb-3 text-sm leading-relaxed">Detailed property search and verification services to check legal status, pending litigations, and ownership details.</p>
+          <!-- mt-auto lagaya taaki bottom pe chipak jaye -->
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+          </div>
+             <div class="flex-shrink-0">
+            <img src="./assets/service5.png" alt="Title Verification" class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-lg">
+          </div>
+          </div>
+       
+
+        <!-- Service Card 8: Stamp Duty & Registration Fee Calculation -->
+        <div class="bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-20 transition-all duration-300 flex items-center space-x-4 max-w-sm w-full hover:bg-opacity-40">
+          <div class="flex-1">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Stamp Duty & Registration Fee Calculation</h3>
+            <p class="text-gray-700 mb-3 text-sm leading-relaxed">Accurate calculation of stamp duty, registration fees, and other charges as per latest government rates for Delhi-NCR region.</p>
+         <!-- mt-auto lagaya taaki bottom pe chipak jaye -->
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+          </div>
+            <div class="flex-shrink-0">
+            <img src="./assets/service6.png" alt="Title Verification" class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-lg">
+          </div>
+        </div>
+
+        <!-- Service Card 9: Power of Attorney Services -->
+        <div class="bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-20 transition-all duration-300 flex items-center space-x-4 max-w-sm w-full hover:bg-opacity-40">
+          <div class="flex-1">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Power of Attorney Services</h3>
+            <p class="text-gray-700 mb-3 text-sm leading-relaxed">Preparation and registration of Power of Attorney documents for property transactions and legal representation.</p>
+           <!-- mt-auto lagaya taaki bottom pe chipak jaye -->
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+          </div>
+           <div class="flex-shrink-0">
+            <img src="./assets/service5.png" alt="Title Verification" class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-lg">
+          </div>
+        </div>
+
+        <!-- Service Card 10: Property Legal Consultation -->
+        <div class="bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-20 transition-all duration-300 flex items-center space-x-4 max-w-sm w-full hover:bg-opacity-40">
+          <div class="flex-1">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Property Legal Consultation</h3>
+            <p class="text-gray-700 mb-3 text-sm leading-relaxed">Expert legal consultation on all property matters including dispute resolution, compliance issues, and transaction guidance.</p>
+           <!-- mt-auto lagaya taaki bottom pe chipak jaye -->
+       <a href="#" class="text-blue-600 font-bold flex items-center gap-3 mt-auto">
+  Learn More <img src="./images/arrow.png" alt="Arrow" class="w-6 h-6">
+</a>
+          </div>
+             <div class="flex-shrink-0">
+            <img src="./assets/service6.png" alt="Title Verification" class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-lg">
           </div>
         </div>
         
-        <!-- Service Item 2 -->
-        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center space-x-6">
-          <div class="flex-1">
-            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">Title Verification & Due Diligence</h3>
-            <p class="text-gray-600 mb-4 leading-relaxed">Complete property registration services including sale deed, gift deed, and property transfer documentation with government authorities in Delhi-NCR.</p>
-            <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold hover:underline transition duration-300">
-              Learn More 
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="flex-shrink-0">
-            <img src="./assets/title-verfication.png" alt="Title Verification" class="w-24 h-24 md:w-32 md:h-32 object-cover rounded-lg">
-          </div>
-        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
         
       </div>
     </div>
@@ -154,49 +277,61 @@
     </div>
   </div>
   
-  <!-- Content Container -->
-  <div class="relative z-10 max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 md:p-12">
-    
-    <!-- Main Heading -->
-    <h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-6 uppercase tracking-wide">
-      OUR SPECIALIZATION
-    </h2>
-    
-    <!-- Subtitle -->
-    <p class="text-center text-lg md:text-xl text-gray-700 mb-8 font-medium">
-      Setting Up Legal Entity in India for <span class="text-blue-600 font-semibold">Global Clients</span>.
+ <!-- Content Container -->
+<div class="relative z-10 max-w-6xl mx-auto bg-white bg-opacity-20 backdrop-blur-sm rounded-lg shadow-lg border border-white border-opacity-30 p-8 md:px-16 md:py-8">
+  
+  <!-- Main Heading -->
+  <h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-6 uppercase tracking-wide">
+    OUR SPECIALIZATION
+  </h2>
+  
+  <!-- Subtitle -->
+  <p class="text-center text-lg md:text-xl text-gray-700 mb-8 font-medium">
+    Setting Up Legal Entity in India for <span class="text-blue-600 font-semibold">Global Clients</span>.
+  </p>
+  
+  <!-- Description Paragraphs -->
+  <div class="space-y-6 text-gray-700 leading-relaxed">
+    <p class="text-base md:text-lg">
+      Our core specializations cover end-to-end property documentation and consultancy services to ensure smooth, legal, and hassle-free transactions across the Delhi-NCR region. From property registration, title verification, and mutation to NOCs, stamp duty, and due diligence, we provide complete support at every stage. Our expertise also includes legal documentation, compliance assistance, and personalized consultation to help you make informed property decisions with confidence and ease.
     </p>
     
-    <!-- Description Paragraphs -->
-    <div class="space-y-6 text-gray-600 leading-relaxed">
-      <p class="text-base md:text-lg">
-        Our core specializations cover end-to-end property documentation and consultancy services to ensure smooth, legal, and hassle-free transactions across the Delhi-NCR region. From property registration, title verification, and mutation to NOCs, stamp duty, and due diligence, we provide complete support at every stage. Our expertise also includes legal documentation, compliance assistance, and personalized consultation to help you make informed property decisions with confidence and ease.
-      </p>
-      
-      <p class="text-base md:text-lg">
-        Comprehensive property documentation and consultancy services designed to make your property transactions smooth, legal, and hassle-free across <span class="text-blue-600 font-semibold">Delhi-NCR region</span>.
-      </p>
-    </div>
+    <p class="text-base md:text-lg">
+      Comprehensive property documentation and consultancy services designed to make your property transactions smooth, legal, and hassle-free across <span class="text-blue-600 font-semibold">Delhi-NCR region</span>.
+    </p>
   </div>
-  
-  <!-- Bottom Watermark Text -->
-  <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 pointer-events-none">
-    <div class="text-gray-200 font-bold text-4xl md:text-6xl lg:text-7xl opacity-20 select-none">
+</div>
+
+<!-- Watermark Big Background Text - MOVED FURTHER DOWN -->
+<div class="absolute bottom-0 left-0 w-full pointer-events-none select-none z-0 flex justify-center transform translate-x-8 translate-y-20 py-8">
+    <h1 class="text-[8rem] md:text-[10rem] lg:text-[10rem] font-semibold text-white opacity-80 tracking-tight"
+        style="text-shadow: 
+               2px 2px 0px #ccc,
+               4px 4px 0px #aaa,
+               6px 6px 8px rgba(0,0,0,0.4),
+               -1px -1px 0px #fff,
+               -2px -2px 0px rgba(255,255,255,0.8);">
       SPECIALIZATION
-    </div>
-  </div>
-  
+    </h1>
+</div>
+
 </section>
 
 
   <!-- How It Works -->
 <section id="how-it-works" class="relative py-16 px-4 md:px-8 lg:px-16 bg-gray-50 overflow-hidden">
   
-  <!-- Background Watermark Text -->
-  <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-    <div class="text-gray-200 font-bold text-6xl md:text-8xl lg:text-9xl opacity-20 select-none">
+  <!-- Watermark Big Background Text - MOVED FURTHER DOWN -->
+<div class="absolute bottom-0 left-0 w-full pointer-events-none select-none z-0 flex justify-center transform translate-x-8 translate-y-20 py-8">
+    <h1 class="text-[8rem] md:text-[10rem] lg:text-[10rem] font-semibold text-white opacity-80 tracking-tight"
+        style="text-shadow: 
+               2px 2px 0px #ccc,
+               4px 4px 0px #aaa,
+               6px 6px 8px rgba(0,0,0,0.4),
+               -1px -1px 0px #fff,
+               -2px -2px 0px rgba(255,255,255,0.8);">
       HOW IT WORKS
-    </div>
+    </h1>
   </div>
   
   <!-- Content Container -->
@@ -212,252 +347,378 @@
       Simple Steps to Get Your Documents Hassle-Free
     </p>
     
-    <!-- Steps Container -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-      
-      <!-- Step 1: Free Consultation -->
-      <div class="step bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-        <div class="flex flex-col items-center text-center">
-          <!-- Icon -->
-          <div class="bg-blue-100 rounded-lg p-4 mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20v2H9v-2m8 0V9a3 3 0 00-3-3H9a3 3 0 00-3 3v11m8 0H9m8 0h4v-2a3 3 0 00-5.356-1.857M9 20H5v-2a3 3 0 015.356-1.857" />
-            </svg>
-          </div>
-          
-          <!-- Title -->
-          <h3 class="font-bold text-xl md:text-2xl text-gray-900 mb-4">Free Consultation</h3>
-          
-          <!-- Description -->
-          <p class="text-gray-600 text-base md:text-lg leading-relaxed">
-            Our expert consultants will connect with you to understand your business need and we will provide you legal and valid solution for your business.
-          </p>
-        </div>
+   <!-- Steps Container -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+  
+ <!-- Step 1: Free Consultation -->
+<div class="step bg-white bg-opacity-30 backdrop-blur-sm rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 max-w-xs mx-auto">
+  <div class="flex flex-col items-center text-center">
+    <!-- Icon -->
+    <div class="bg-blue-100 rounded-lg p-2 mb-4">
+      <img src="./images/vectorlogo.svg" alt="Free Consultation Icon" class="h-12 w-12">
+    </div>
+    
+    <!-- Title -->
+    <h3 class="font-bold text-xl md:text-2xl text-gray-900 mb-4">Free Consultation</h3>
+    
+    <!-- Paragraph with 7 lines -->
+    <p class="text-gray-600 text-sm leading-relaxed w-56">
+      Our expert consultants will connect with you to understand your business need and we will provide you legal and valid solution for your business.
+    </p>
+  </div>
+</div>
+
+  <!-- Step 2: Documentation (6 lines) -->
+  <div class="step bg-white bg-opacity-30 backdrop-blur-sm rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 max-w-xs mx-auto">
+    <div class="flex flex-col items-center text-center">
+      <!-- Icon -->
+      <div class="bg-blue-100 rounded-lg p-2 mb-4">
+        <img src="./images/vectorlogo.svg" alt="Documentation Icon" class="h-12 w-12">
       </div>
       
-      <!-- Step 2: Documentation -->
-      <div class="step bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-        <div class="flex flex-col items-center text-center">
-          <!-- Icon -->
-          <div class="bg-blue-100 rounded-lg p-4 mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20v2H9v-2m8 0V9a3 3 0 00-3-3H9a3 3 0 00-3 3v11m8 0H9m8 0h4v-2a3 3 0 00-5.356-1.857M9 20H5v-2a3 3 0 015.356-1.857" />
-            </svg>
-          </div>
-          
-          <!-- Title -->
-          <h3 class="font-bold text-xl md:text-2xl text-gray-900 mb-4">Documentation</h3>
-          
-          <!-- Description -->
-          <p class="text-gray-600 text-base md:text-lg leading-relaxed">
-            End to end online documentation, No need to visit any office!! Our documentation team will complete the process in time.
-          </p>
-        </div>
+      <!-- Title -->
+      <h3 class="font-bold text-xl md:text-2xl text-gray-900 mb-4">Documentation</h3>
+      
+      <!-- Description (6 lines) -->
+      <p class="text-gray-600 text-sm leading-relaxed w-56">
+        End to end online documentation, No need to visit any office!! Our documentation team will complete the process in time.
+      </p>
+    </div>
+  </div>
+  
+  <!-- Step 3: Delivery (3 lines) -->
+  <div class="step bg-white bg-opacity-30 backdrop-blur-sm rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 max-w-xs mx-auto">
+    <div class="flex flex-col items-center text-center">
+      <!-- Icon -->
+      <div class="bg-blue-100 rounded-lg p-2 mb-4">
+        <img src="./images/vectorlogo.svg" alt="Delivery Icon" class="h-12 w-12">
       </div>
       
-      <!-- Step 3: Delivery -->
-      <div class="step bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-        <div class="flex flex-col items-center text-center">
-          <!-- Icon -->
-          <div class="bg-blue-100 rounded-lg p-4 mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20v2H9v-2m8 0V9a3 3 0 00-3-3H9a3 3 0 00-3 3v11m8 0H9m8 0h4v-2a3 3 0 00-5.356-1.857M9 20H5v-2a3 3 0 015.356-1.857" />
-            </svg>
-          </div>
-          
-          <!-- Title -->
-          <h3 class="font-bold text-xl md:text-2xl text-gray-900 mb-4">Delivery</h3>
-          
-          <!-- Description -->
-          <p class="text-gray-600 text-base md:text-lg leading-relaxed">
-            Get the document delivered at your Home!!!
-          </p>
-        </div>
-      </div>
+      <!-- Title -->
+      <h3 class="font-bold text-xl md:text-2xl text-gray-900 mb-4">Delivery</h3>
+      
+      <!-- Description (3 lines) -->
+      <p class="text-gray-600 text-sm leading-relaxed w-56">
+        Get the document delivered at your Home!!!
+      </p>
+    </div>
+  </div>
     </div>
   </div>
 </section>
 
-  <!-- Clients -->
-<section id="clients" class="relative py-16 px-4 md:px-8 lg:px-16 bg-gray-50 overflow-hidden">
-  
-  <!-- Background Watermark Text -->
-  <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-    <div class="text-gray-200 font-bold text-6xl md:text-8xl lg:text-9xl opacity-20 select-none">
-      CLIENTS
-    </div>
-  </div>
 
-  <!-- Content Container -->
-  <div class="relative z-10 max-w-7xl mx-auto text-center">
-    
-    <!-- Main Heading -->
+<!-- Clients -->
+<section id="clients" class="relative py-16 px-4 md:px-8 lg:px-16 bg-gray-50 overflow-hidden">
+  <!-- Watermark Big Background Text -->
+  <div class="absolute bottom-0 left-0 w-full pointer-events-none select-none z-0 flex justify-center transform translate-x-8 translate-y-20 py-8">
+    <h1 class="text-[8rem] md:text-[10rem] lg:text-[10rem] font-semibold text-white opacity-80 tracking-tight"
+        style="text-shadow: 
+               2px 2px 0px #ccc,
+               4px 4px 0px #aaa,
+               6px 6px 8px rgba(0,0,0,0.4),
+               -1px -1px 0px #fff,
+               -2px -2px 0px rgba(255,255,255,0.8);">
+     CLIENTS
+    </h1>
+  </div>
+ <!-- Content Container - CENTERED -->
+  <div class="relative z-10 w-full text-center">
     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-3 uppercase tracking-wide">
       OUR CLIENTS
     </h2>
-    
-    <!-- Subtitle -->
     <p class="text-base md:text-lg text-gray-700 mb-12 font-medium">
       Trusted by Individuals & Businesses Nationwide
     </p>
+  </div>
 
-    <!-- Client List -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- CAROUSEL Section with Navigation Arrows -->
+<div class="relative w-full max-w-7xl mx-auto">
+  
+  <!-- Left Arrow -->
+  <button id="prevBtn" class="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110">
+    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+    </svg>
+  </button>
 
+  <!-- Carousel Container -->
+  <div id="carousel" class="overflow-hidden">
+    <div class="flex transition-transform duration-500 ease-in-out" id="carouselTrack">
+      
       <!-- Client 1: Delhi -->
-      <div class="client bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <div class="flex items-center mb-4">
+      <div class="client bg-white bg-opacity-30 backdrop-blur-sm rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-60 flex-shrink-0 border border-white border-opacity-20 p-8 flex flex-col min-h-[400px] mx-3">
+        <div class="flex items-center mb-6">
           <img src="./assets/delhi.jpg" alt="Delhi" class="w-12 h-12 rounded-full mr-4 object-cover flex-shrink-0">
           <div class="border-l-4 border-blue-600 pl-3">
             <h3 class="text-lg font-bold text-gray-900 uppercase">DELHI</h3>
           </div>
         </div>
-        <p class="text-gray-600 text-sm leading-relaxed text-left mb-6">
-          Unit no-307/308,<br>
-          Building No-3, Sector-3,<br>
-          Millennium Business<br>
-          Park, Mahape, Navi<br>
-          Mumbai, 400710
-        </p>
-        <div class="border-b-4 border-blue-600"></div>
+        <div class="flex-grow">
+          <p class="text-gray-700 text-sm leading-relaxed mb-4">
+            Unit no-307/308,<br>
+            Building No-3, Sector-3,<br>
+            Millennium Business<br>
+            Park, Mahape, Navi<br>
+            Mumbai, 400710
+          </p>
+        </div>
+        <div class="border-b-4 border-blue-600 mt-auto"></div>
       </div>
 
       <!-- Client 2: Mumbai -->
-      <div class="client bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <div class="flex items-center mb-4">
+      <div class="client bg-white bg-opacity-30 backdrop-blur-sm rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-60 flex-shrink-0 border border-white border-opacity-20 p-8 flex flex-col min-h-[400px] mx-3">
+        <div class="flex items-center mb-6">
           <img src="./assets/mumbai.jpg" alt="Mumbai" class="w-12 h-12 rounded-full mr-4 object-cover flex-shrink-0">
           <div class="border-l-4 border-blue-600 pl-3">
             <h3 class="text-lg font-bold text-gray-900 uppercase">MUMBAI</h3>
           </div>
         </div>
-        <p class="text-gray-600 text-sm leading-relaxed text-left mb-6">
-          Unit no-307/308,<br>
-          Building No-3, Sector-3,<br>
-          Millennium Business<br>
-          Park, Mahape, Navi<br>
-          Mumbai, 400710
-        </p>
-        <div class="border-b-4 border-blue-600"></div>
+        <div class="flex-grow">
+          <p class="text-gray-700 text-sm leading-relaxed mb-4">
+            Unit no-307/308,<br>
+            Building No-3, Sector-3,<br>
+            Millennium Business<br>
+            Park, Mahape, Navi<br>
+            Mumbai, 400710
+          </p>
+        </div>
+        <div class="border-b-4 border-blue-600 mt-auto"></div>
       </div>
 
       <!-- Client 3: Thane -->
-      <div class="client bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <div class="flex items-center mb-4">
-          <div class="w-12 h-12 bg-gray-300 rounded-full mr-4 flex-shrink-0"></div>
+      <div class="client bg-white bg-opacity-30 backdrop-blur-sm rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-60 flex-shrink-0 border border-white border-opacity-20 p-8 flex flex-col min-h-[400px] mx-3">
+        <div class="flex items-center mb-6">
+          <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
           <div class="border-l-4 border-blue-600 pl-3">
             <h3 class="text-lg font-bold text-gray-900 uppercase">THANE</h3>
           </div>
         </div>
-        <p class="text-gray-600 text-sm leading-relaxed text-left mb-6">
-          Unit no-307/308,<br>
-          Building No-3, Sector-3,<br>
-          Millennium Business<br>
-          Park, Mahape, Navi<br>
-          Mumbai, 400710
-        </p>
-        <div class="border-b-4 border-blue-600"></div>
+        <div class="flex-grow">
+          <p class="text-gray-700 text-sm leading-relaxed mb-4">
+            Unit no-307/308,<br>
+            Building No-3, Sector-3,<br>
+            Millennium Business<br>
+            Park, Mahape, Navi<br>
+            Mumbai, 400710
+          </p>
+        </div>
+        <div class="border-b-4 border-blue-600 mt-auto"></div>
       </div>
 
-      <!-- Client 4: (Additional location) -->
-      <div class="client bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <div class="flex items-center mb-4">
-          <div class="w-12 h-12 bg-gray-300 rounded-full mr-4 flex-shrink-0"></div>
+      <!-- Client 4: Pune -->
+      <div class="client bg-white bg-opacity-30 backdrop-blur-sm rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-60 flex-shrink-0 border border-white border-opacity-20 p-8 flex flex-col min-h-[400px] mx-3">
+        <div class="flex items-center mb-6">
+          <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
           <div class="border-l-4 border-blue-600 pl-3">
             <h3 class="text-lg font-bold text-gray-900 uppercase">PUNE</h3>
           </div>
         </div>
-        <p class="text-gray-600 text-sm leading-relaxed text-left mb-6">
-          Unit no-307/308,<br>
-          Building No-3, Sector-3,<br>
-          Millennium Business<br>
-          Park, Mahape, Navi<br>
-          Mumbai, 400710
-        </p>
-        <div class="border-b-4 border-blue-600"></div>
+        <div class="flex-grow">
+          <p class="text-gray-700 text-sm leading-relaxed mb-4">
+            Unit no-307/308,<br>
+            Building No-3, Sector-3,<br>
+            Millennium Business<br>
+            Park, Mahape, Navi<br>
+            Mumbai, 400710
+          </p>
+        </div>
+        <div class="border-b-4 border-blue-600 mt-auto"></div>
+      </div>
+
+      <!-- Client 5: Bangalore -->
+      <div class="client bg-white bg-opacity-30 backdrop-blur-sm rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-60 flex-shrink-0 border border-white border-opacity-20 p-8 flex flex-col min-h-[400px] mx-3">
+        <div class="flex items-center mb-6">
+          <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+          <div class="border-l-4 border-blue-600 pl-3">
+            <h3 class="text-lg font-bold text-gray-900 uppercase">BANGLORE</h3>
+          </div>
+        </div>
+        <div class="flex-grow">
+          <p class="text-gray-700 text-sm leading-relaxed mb-4">
+            Unit no-307/308,<br>
+            Building No-3, Sector-3,<br>
+            Millennium Business<br>
+            Park, Mahape, Navi<br>
+            Mumbai, 400710
+          </p>
+        </div>
+        <div class="border-b-4 border-blue-600 mt-auto"></div>
       </div>
 
     </div>
+  </div>
+
+  <!-- Right Arrow -->
+  <button id="nextBtn" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110">
+    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+    </svg>
+  </button>
+
+</div>
   </div>
 </section>
-<!-- Testimonials -->
-<section id="testimonials" class="relative py-16 px-4 md:px-8 lg:px-16 bg-gray-50 overflow-hidden">
 
-  <!-- Background Watermark Text -->
-  <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-    <div class="text-gray-200 font-bold text-6xl md:text-8xl lg:text-9xl opacity-20 select-none uppercase tracking-widest">
-      TESTIMONIALS
+
+
+<!-- Testimonials -->
+<section id="testimonials" class="relative py-16 px-4 md:px-8 lg:px-16 bg-gray-50 overflow-hidden mb-8">
+
+  <!-- Watermark Big Background Text - MOVED FURTHER DOWN -->
+<div class="absolute bottom-14 left-0 w-full pointer-events-none select-none z-0 flex justify-center transform translate-x-8 translate-y-20 ">
+    <h1 class="text-[8rem] md:text-[10rem] lg:text-[10rem] font-semibold text-white opacity-80 tracking-tight"
+        style="text-shadow: 
+               2px 2px 0px #ccc,
+               4px 4px 0px #aaa,
+               6px 6px 8px rgba(0,0,0,0.4),
+               -1px -1px 0px #fff,
+               -2px -2px 0px rgba(255,255,255,0.8);">
+    TESTIMONIALS
+    </h1>
+  </div>
+  </div>
+
+<!-- Content Container -->
+<div class="relative z-10 max-w-7xl mx-auto">
+  <!-- Section Header - Centered -->
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4 uppercase tracking-tight">
+      CUSTOMER TESTIMONIALS
+    </h2>
+    <p class="text-lg md:text-xl text-gray-700 font-medium">
+      Hear What Our Happy Clients Say
+    </p>
+  </div>
+  
+  <!-- Main Content Grid -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+    <!-- Left Side - Description & CTA -->
+    <div class="text-left">
+      <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+        The Honest Review From Our Client
+      </h3>
+      <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
+        Our clients share their experiences with our document services – from fast processing to dependable support.
+      </p>
+      <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+        See All Review
+      </button>
+    </div>
+    
+    <!-- Right Side - NARROWER Container with LARGER Images -->
+   <div class="testimonial-list space-y-4 max-h-[350px] overflow-y-auto pr-4 w-full max-w-2xl bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-20 -mt-4 ml-auto mr-6">
+      
+      <!-- Top Decorative Quote Vector -->
+      <!-- <div class="flex justify-center mb-3">
+        <img src="./images/Vectorcomma.png" alt="Quote Vector" class="w-10 h-10 opacity-60">
+      </div> -->
+      
+     <!-- Testimonial 1 - COMPACT -->
+<div class="testimonial bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-3 border border-white border-opacity-20 hover:bg-opacity-40 transition-all duration-300 flex items-start space-x-3 w-full">
+  <div class="flex-1 min-w-0">
+    <div class="mb-3 flex gap-4">
+      <img src="./images/Vector.svg" alt="Quote Vector" class="w-8 h-8 mb-2 opacity-60">
+      <div>
+      <p class="text-gray-700 text-sm leading-relaxed italic">
+        I got my food license within a few days without any trouble. The team was very supportive and guided me at every step. Highly recommended!
+      </p>
+       <footer class="pl-0">
+      <div class="font-bold text-gray-900 text-sm">Rohit Sharma</div>
+      <div class="text-xs text-gray-500">Restaurant Owner</div>
+    </footer>
+    </div>
+   </div>
+  </div>
+  <div class="flex-shrink-0">
+    <img src="./assets/rohitsharma.jpg" alt="Rohit Sharma" class="w-20 h-28 md:w-24 md:h-36 rounded-lg object-cover">
+  </div>
+</div>
+
+      
+    <!-- Testimonial 2 - COMPACT -->
+<div class="testimonial bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-3 border border-white border-opacity-20 hover:bg-opacity-40 transition-all duration-300 flex items-start space-x-3 w-full">
+  <div class="flex-1 min-w-0">
+    <div class="mb-3 flex gap-4">
+      <img src="./images/Vector.svg" alt="Quote Vector" class="w-8 h-8 mb-2 opacity-60">
+      <div>
+        <p class="text-gray-700 text-sm leading-relaxed italic">
+          NCRDOC made my GST registration process smooth and stress-free. Their experts handled everything professionally. Great service!
+        </p>
+        <footer class="pl-0">
+          <div class="font-bold text-gray-900 text-sm">Anita Verma</div>
+          <div class="text-xs text-gray-500">Small Business Owner</div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <div class="flex-shrink-0">
+    <img src="./assets/anitaveraa.jpg" alt="Anita Verma" class="w-20 h-28 md:w-24 md:h-36 rounded-lg object-cover">
+  </div>
+</div>
+
+<!-- Testimonial 3 - COMPACT (Hidden, visible on scroll) -->
+<div class="testimonial bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-3 border border-white border-opacity-20 hover:bg-opacity-40 transition-all duration-300 flex items-start space-x-3 w-full">
+  <div class="flex-1 min-w-0">
+    <div class="mb-3 flex gap-4">
+      <img src="./images/Vector.svg" alt="Quote Vector" class="w-8 h-8 mb-2 opacity-60">
+      <div>
+        <p class="text-gray-700 text-sm leading-relaxed italic">
+          Their property documentation services are exceptional. They handled all our legal paperwork with great attention to detail and professionalism.
+        </p>
+        <footer class="pl-0">
+          <div class="font-bold text-gray-900 text-sm">Rohit Sharma</div>
+          <div class="text-xs text-gray-500">Property Investor</div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <div class="flex-shrink-0">
+    <img src="./assets/rohitsharma2.jpg" alt="Rohit Sharma" class="w-20 h-28 md:w-24 md:h-36 rounded-lg object-cover">
+  </div>
+</div>
+
+<!-- Testimonial 4 - COMPACT (Hidden, visible on scroll) -->
+<div class="testimonial bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-3 border border-white border-opacity-20 hover:bg-opacity-40 transition-all duration-300 flex items-start space-x-3 w-full">
+  <div class="flex-1 min-w-0">
+    <div class="mb-3 flex gap-4">
+      <img src="./images/Vector.svg" alt="Quote Vector" class="w-8 h-8 mb-2 opacity-60">
+      <div>
+        <p class="text-gray-700 text-sm leading-relaxed italic">
+          NCRDOC's expertise in legal documentation saved us time and ensured all our property transactions were compliant. Highly recommended!
+        </p>
+        <footer class="pl-0">
+          <div class="font-bold text-gray-900 text-sm">Anita Verma</div>
+          <div class="text-xs text-gray-500">Real Estate Consultant</div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <div class="flex-shrink-0">
+    <img src="./assets/anitaverma2.jpg" alt="Anita Verma" class="w-20 h-28 md:w-24 md:h-36 rounded-lg object-cover">
+  </div>
+</div>
+
+</div>
+
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+</div>
+
     </div>
   </div>
 
-  <!-- Content Container -->
-  <div class="relative z-10 max-w-7xl mx-auto">
-    
-    <!-- Section Header - Centered -->
-    <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4 uppercase tracking-tight">
-        CUSTOMER TESTIMONIALS
-      </h2>
-      <p class="text-lg md:text-xl text-gray-700 font-medium">
-        Hear What Our Happy Clients Say
-      </p>
-    </div>
+</div>
 
-    <!-- Main Content Grid -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-
-      <!-- Left Side - Description & CTA -->
-      <div class="text-left">
-        <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-          The Honest Review From Our Client
-        </h3>
-        <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
-          Our clients share their experiences with our document services – from fast processing to dependable support.
-        </p>
-        <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-          See All Review
-        </button>
-      </div>
-
-      <!-- Right Side - Testimonials List -->
-      <div class="testimonial-list space-y-8">
-        
-        <!-- Testimonial 1 -->
-        <div class="testimonial bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-start space-x-4">
-          <div class="flex-1">
-            <blockquote class="text-gray-700 mb-4 relative">
-              <span class="text-4xl text-blue-400 absolute -left-2 -top-2 select-none font-serif">"</span>
-              <p class="pl-6 italic text-base leading-relaxed">
-                I got my food license within a few days without any trouble. The team was very supportive and guided me at every step. Highly recommended!
-              </p>
-            </blockquote>
-            <footer class="pl-6">
-              <div class="font-bold text-gray-900">Rohit Sharma</div>
-              <div class="text-sm text-gray-500">Restaurant Owner</div>
-            </footer>
-          </div>
-          <div class="flex-shrink-0">
-            <img src="./assets/rohitsharma.jpg" alt="Rohit Sharma" class="w-16 h-16 md:w-20 md:h-20 rounded-lg object-cover">
-          </div>
-        </div>
-
-        <!-- Testimonial 2 -->
-        <div class="testimonial bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-start space-x-4">
-          <div class="flex-1">
-            <blockquote class="text-gray-700 mb-4 relative">
-              <span class="text-4xl text-blue-400 absolute -left-2 -top-2 select-none font-serif">"</span>
-              <p class="pl-6 italic text-base leading-relaxed">
-                NCRDOC made my GST registration process smooth and stress-free. Their experts handled everything professionally. Great service!
-              </p>
-            </blockquote>
-            <footer class="pl-6">
-              <div class="font-bold text-gray-900">Anita Verma</div>
-              <div class="text-sm text-gray-500">Small Business Owner</div>
-            </footer>
-          </div>
-          <div class="flex-shrink-0">
-            <img src="./assets/anitaverma.jpg" alt="Anita Verma" class="w-16 h-16 md:w-20 md:h-20 rounded-lg object-cover">
-          </div>
-        </div>
 
       </div>
 
@@ -472,13 +733,12 @@
     
     <!-- Main Footer Content -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-
       <!-- Logo Section with Navbar Logo -->
       <div class="footer-logo">
         <img src="./assets/logo.png" alt="Logo" class="h-12 w-auto mb-3">
         <p class="text-sm text-gray-400">NCRDOCS.COM</p>
       </div>
-
+      
       <!-- Helpful Links -->
       <div>
         <h4 class="text-lg font-semibold mb-4 text-white">
@@ -486,13 +746,13 @@
           <div class="w-12 h-1 bg-blue-500 mt-1"></div>
         </h4>
         <ul class="space-y-3 text-sm text-gray-300">
-          <li><a href="#" class="hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition duration-300">Support</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition duration-300">FAQ</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition duration-300">Terms & Conditions</a></li>
+          <li><a href="privacypolicy.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
+          <li><a href="support.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">Support</a></li>
+          <li><a href="faq.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">FAQ</a></li>
+          <li><a href="terms&condtion.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">Terms & Conditions</a></li>
         </ul>
       </div>
-
+      
       <!-- Support -->
       <div>
         <h4 class="text-lg font-semibold mb-4 text-white">
@@ -500,13 +760,13 @@
           <div class="w-12 h-1 bg-blue-500 mt-1"></div>
         </h4>
         <ul class="space-y-3 text-sm text-gray-300">
-          <li><a href="#" class="hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition duration-300">Support</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition duration-300">FAQ</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition duration-300">Terms & Conditions</a></li>
+          <li><a href="privacypolicy.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
+          <li><a href="support.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">Support</a></li>
+          <li><a href="faq.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">FAQ</a></li>
+          <li><a href="terms&condtion.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">Terms & Conditions</a></li>
         </ul>
       </div>
-
+      
       <!-- Contact Us -->
       <div>
         <h4 class="text-lg font-semibold mb-4 text-white">
@@ -528,7 +788,7 @@
             Sign Up
           </button>
         </div>
-
+        
         <!-- Contact Information -->
         <div class="space-y-2 text-sm text-gray-300">
           <p class="flex items-start gap-2">
@@ -546,9 +806,8 @@
           </p>
         </div>
       </div>
-
     </div>
-
+    
     <!-- Footer Bottom -->
     <div class="border-t border-gray-700 pt-8">
       <div class="flex flex-col md:flex-row justify-between items-center">
@@ -556,9 +815,9 @@
         <p class="text-sm text-gray-400 mt-2 md:mt-0">Copyright © 2025. All rights reserved</p>
       </div>
     </div>
-
   </div>
 </footer>
+
 
 
 </body>
