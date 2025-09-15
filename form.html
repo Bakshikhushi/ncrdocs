@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enquiry Form - NCR DOCS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen p-4">
+  
+  <!-- Form Container -->
+  <div class="bg-gray-400 rounded-3xl p-8 max-w-2xl w-full mx-auto shadow-lg">
+    
+    <!-- Form Title -->
+    <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 text-center mb-6">
+      Fill your enquiry here
+    </h2>
+    
+    <!-- Contact Form -->
+    <form action="#" method="POST" class="space-y-4">
+      
+      <!-- Name Field -->
+      <input
+        type="text"
+        name="name"
+        placeholder="Name *"
+        required
+        class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-gray-900 placeholder-gray-500"
+      />
+      
+      <!-- Email Field -->
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-gray-900 placeholder-gray-500"
+      />
+      
+      <!-- Phone Field -->
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Phone number *"
+        required
+        class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-gray-900 placeholder-gray-500"
+      />
+      
+      <!-- Message Field -->
+      <textarea
+        name="message"
+        placeholder="Your Message"
+        rows="3"
+        class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-gray-900 placeholder-gray-500 resize-none"
+      ></textarea>
+      
+      <!-- Submit Button -->
+      <button
+        type="submit"
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-md transition duration-300"
+      >
+        SEND
+      </button>
+      
+    </form>
+    
+  </div>
+  
+</body>
+</html>
